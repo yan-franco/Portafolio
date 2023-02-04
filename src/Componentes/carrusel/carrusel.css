@@ -1,0 +1,32 @@
+.carousel-item{
+    height: 27rem;
+    background: black;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.adaptabilidad{
+    background-image: url(../../img/imgCarusel/Adaptabilidad.png);
+}
+.responsabilidad{
+    background-image: url(../../img/imgCarusel/Responsabilidad.png) ;
+}
+.colaboracion{
+    background-image: url(../../img/imgCarusel/Colaboración.png) ;
+}
+.creatividad{
+    background-image: url(../../img/imgCarusel/Creatividad.png) ;
+}
+.inteEmocional{
+    background-image: url(../../img/imgCarusel/Inteligencia\ Emocinal.png) ;
+}
+.flexibilidad{
+    background-image: url(../../img/imgCarusel/Flexibilidad.png) ;
+}
+.paciencia{
+    background-image: url(../../img/imgCarusel/Paciencia.png) ;
+}
+.atenDetalles{
+    background-image: url(../../img/imgCarusel/atención\ a\ los\ detalles.png) ;
+}
