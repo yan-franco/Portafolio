@@ -3,7 +3,10 @@
     background: black;
     background-position: center;
     background-size: cover;
+}
 
+.fontInvi{
+    background-image: url("../../img/body.png");
 }
 
 .adaptabilidad{
@@ -29,4 +32,183 @@
 }
 .atenDetalles{
     background-image: url(../../img/imgCarusel/atención\ a\ los\ detalles.png) ;
+}
+
+.perfil{
+    height: 189px;
+    transition: 0.5s;
+    object-fit: cover;
+    float: left;
+    padding: 15px;
+}
+
+.perfil:hover{
+    transform: scale(1.2);
+}
+
+.nombre{
+    font-style:italic;
+    float: left;
+    padding-top: 16px;
+}
+
+.fullS{
+    float:left;
+}
+
+.iconosL{
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    border-top: 10px;
+    transition: 0.5s;
+    object-fit: cover;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10%;
+}
+
+.iconosL:hover{
+    transform: scale(1.2);
+}
+
+.iconosG{
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    border-top: 10px;
+    transition: 0.5s;
+    object-fit: cover;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 100%;
+}
+
+.iconosG:hover{
+    transform: scale(1.2);
+}
+
+.iconosT{
+    height: 40px;
+    transition: 0.5s;
+    object-fit: cover;
+    float: left;
+}
+
+.iconosT:hover{
+    transform: scale(1.2);
+}
+
+
+.select{
+    border: 1px solid black;
+}
+
+.boton{
+    background-color: transparent;
+    border-color: transparent;
+    padding: 10px 20px;
+    transition: 0.5s;
+    object-fit: cover;
+    float: right;
+}
+
+.boton:hover{
+    background-color: rgb(183, 167, 255);
+    transform: scale(1.2);
+}
+
+/* --------------------- ------------------------ */
+
+.linkedin::before{
+    content: " ";
+    background-image: url(../../img/perfilPer/linkedin-hover.png);
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+
+.linkedin{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.linkedin::after{
+    content: " ";
+    background-image: url(../../img/perfilPer/linkedin-hover.png);
+    background-size: cover;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    transform: translate(100%);
+    border-radius: 10%;
+}
+
+.linkedin:hover::after{
+    transform: translateY(0);
+    background-color: #0e76a8;
+
+}
+
+.linkedin:hover::before{
+    transform: translateY(-100%);
+    background-color: #0e76a8;
+}
+
+
+/* ---------------------------- */
+
+.github::before{
+    content: " ";
+    background-image: url(../../img/perfilPer/github.png);
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+
+.github{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.github::after{
+    content: " ";
+    background-image: url(../../img/perfilPer/github.png);
+    background-size: cover;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    transform: translate(100%);
+    border-radius: 100%;
+}
+
+.github:hover::after{
+    transform: translateY(0);
+    background-color: greenyellow;
+
+}
+
+.github:hover::before{
+    transform: translateY(-100%);
+    background-color: greenyellow;
 }
