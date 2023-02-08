@@ -1,6 +1,7 @@
 import React from "react";
 import {Route} from "react-router-dom"
-import perfil from "../../img/perfilPer/pefil.png"
+// import perfil from "../../img/perfilPer/pefil.png"
+import perfil2 from "../../img/perfilPer/perfil2.png"
 // import github from "../../img/perfilPer/github.png"
 // import linkedin from "../../img/perfilPer/linkedin-hover.png"
 import javaS from "../../img/tecnologias/js.png"
@@ -57,10 +58,10 @@ const carrusel = () => {
                     {/* ---------------------------- foto perfil ------------------------- */}
                     <div>
 
-                        <img src={perfil} alt="Yan F. Mieles" className="perfil"/>
+                        {/* <img src={perfil} alt="Yan F. Mieles" className="perfil"/> */}
+                        <img src={perfil2} alt="Yan F. Mieles" className="perfil"/>
                         <h1 className="nombre">Yan Franco Mieles Genez</h1>
-                        {/* <a href="https://www.linkedin.com/in/yan-franco-mieles-genez-793a261b5/"><img src={linkedin} alt="Linkedin" className="iconosR"/></a>
-                        <a href="https://github.com/yan-franco"><img src={github} alt="GitHub" className="iconosR"/></a> */}
+
                         <div className="iconosL">
                             <a href="https://www.linkedin.com/in/yan-franco-mieles-genez-793a261b5/"><div className="linkedin"></div></a>
                         </div>

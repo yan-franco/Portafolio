@@ -1,0 +1,39 @@
+.b {
+    transition: .5s;
+    font-size: 10pt;
+    margin: 0px;
+    padding: 0;
+    color: #333;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin: 15px;
+    display: inline-block;
+    height: 40px;
+    width: 57px;
+}
+
+.b:hover{
+    background: #333;
+    color: whitesmoke;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.c {
+    padding: 10px;
+    margin-right: 0;
+    float: left;
+    display: flex;
+    height: 500px;
+    width: 500px;
+}
+
+.x{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
