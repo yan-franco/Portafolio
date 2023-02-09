@@ -37,3 +37,11 @@
     flex-wrap: wrap;
 }
 
+
+.ule {
+    transition: 0.5s;
+}
+
+.ule:hover{
+    transform: scale(1.1);
+}

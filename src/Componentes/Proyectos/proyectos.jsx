@@ -8,7 +8,7 @@ export default function proyectos() {
         <div className="x">
             {/* <h1>Proyectos...</h1> */}
             <div class="card c">
-                <img src={PrimerPro} class="card-img-top" alt="..." />
+                <img src={PrimerPro} class="card-img-top ule" alt="..." />
 
                 <div class="card-body">
                     <h5 class="card-title">La Ruina Tv</h5>
