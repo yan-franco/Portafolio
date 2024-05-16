@@ -5,7 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
-  background-image: url(./img/otros/body.jpg);
+
+  background-color: white;
+
+  padding: 0 15px 0 15px;
+  border: 0;
 
 }
 

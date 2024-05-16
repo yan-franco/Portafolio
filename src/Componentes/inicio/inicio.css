@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+.tabla {
+    border: solid 2px black;
+    height: 100%;
+    width: 100%;
+}
+
+tr {
+    border: solid 2px black;
+}
+
+td {
+    border: solid 2px black;
+}
+
+.tabla .f1 {
+    height: 50px;
+    padding: 0;
+}
+
+.tituloName {
+    font-family: "Emblema One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8rem;
+    color: black;
+
+    line-height: 100px;
+    letter-spacing: -10px;
+}
+
+.sub1 {
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 3rem;
+    color: black;
+
+}
+
+.sub2 {
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    color: black;
+}
+
+.imgperfil {
+    /* border: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    float: right; */
+    border: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.f2c2 {
+    height: 500px;
+    width: 600px;
+    border: 0;
+    padding: 0;
+}
+
+.f2c1 {
+    padding: 0px 100px 0px 100px;
+}
+
+.f3:hover {
+    background-color: #6AA89B;
+}
+
+.f3-1:hover {
+    background-color: #F1CFB4;
+}
+
+.fixedf1 {
+    position: fixed;
+    top: 0;
+    left: 15px;
+    border-color: black;
+    height: 52px;
+    width: 1319px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.perfil2 {
+    height: 180px;
+    float: left;
+    padding-right: 50px;
+}
+
+.parra {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.f4c2 {
+    border-left: solid 0px black;
+}
+
+.f4c1 {
+    border-right: solid 0px black;
+}
+
+.titulofinal {
+    font-family: "Emblema One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    color: black;
+}
+
+.f4c1,
+.f4c2 {
+    padding: 50px;
+}
+
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: black;
+    border: none;
+    color: white;
+    position: relative;
+    width: 500px;
+    height: 50px;
+    transition: background-color 0.2s ease-in, all 0.15s ease-in;
+}
+
+.button1::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+
+    content: url(../../img/icoGmail.ico) " Enviar un mensaje";
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transform: translate(5px, 5px);
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    transition: all 0.15s ease-in;
+}
+
+.button2::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+
+    content: url(../../img/icolinkedin.png) " Enviar un mensaje";
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transform: translate(5px, 5px);
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    transition: all 0.15s ease-in;
+}
+
+button:hover::after {
+    transform: translate(0px, 0px);
+}
+
+button:hover {
+    transform: translate(0px, 0px);
+}
+
+button:active::after {
+    background-color: rgb(190, 218, 255);
+}
+
+.f3-1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.f3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.margin {
+    margin: 90px;
+}
+
+.f2c1,
+.f2c2 {
+    width: 100%;
+}
+
+.tabla {
+    border: solid 2px black;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding y el border no aumenten el tamaño del elemento */
+}
+
+@media screen and (max-width: 768px) {
+    .f2c1 {
+        padding: 0;
+        text-align: center;
+    }
+
+    .f2c2 {
+        margin-top: 20px;
+        float: none;
+    }
+
+    .perfil2 {
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .f4c1,
+    .f4c2 {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .button1::after,
+    .button2::after {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .f2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .f2c1 {
+        order: 2;
+    }
+
+    .f2c2 {
+        order: 1;
+    }
+
+    .f4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .f4c2 {
+        order: 2;
+    }
+
+    .f4c1 {
+        order: 1;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) {
+    .f2 {
+        flex-direction: row;
+    }
+}
