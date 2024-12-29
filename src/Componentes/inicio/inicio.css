@@ -1,295 +1,510 @@
-@import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-
-.tabla {
-    border: solid 2px black;
-    height: 100%;
-    width: 100%;
-}
-
-tr {
-    border: solid 2px black;
-}
-
-td {
-    border: solid 2px black;
-}
-
-.tabla .f1 {
-    height: 50px;
-    padding: 0;
-}
-
-.tituloName {
-    font-family: "Emblema One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 8rem;
-    color: black;
-
-    line-height: 100px;
-    letter-spacing: -10px;
-}
-
-.sub1 {
-    font-family: "Sedgwick Ave Display", cursive;
-    font-weight: 400;
-    font-style: normal;
-
-    font-size: 3rem;
-    color: black;
-
-}
-
-.sub2 {
-    font-family: "Sedgwick Ave Display", cursive;
-    font-weight: 400;
-    font-style: normal;
-
-    color: black;
-}
-
-.imgperfil {
-    /* border: 0;
-    padding: 0;
-    max-width: 100%;
-    max-height: 100%;
-    float: right; */
-    border: 0;
-    padding: 0;
-    max-width: 100%;
-    height: auto;
-}
-
-.f2c2 {
-    height: 500px;
-    width: 600px;
-    border: 0;
-    padding: 0;
-}
-
-.f2c1 {
-    padding: 0px 100px 0px 100px;
-}
-
-.f3:hover {
-    background-color: #6AA89B;
-}
-
-.f3-1:hover {
-    background-color: #F1CFB4;
-}
-
-.fixedf1 {
-    position: fixed;
-    top: 0;
-    left: 15px;
-    border-color: black;
-    height: 52px;
-    width: 1319px;
-    padding: 0;
-    margin: 0;
-    background-color: white;
-}
-
-.perfil2 {
-    height: 180px;
-    float: left;
-    padding-right: 50px;
-}
-
-.parra {
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.f4c2 {
-    border-left: solid 0px black;
-}
-
-.f4c1 {
-    border-right: solid 0px black;
-}
-
-.titulofinal {
-    font-family: "Emblema One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-
-    color: black;
-}
-
-.f4c1,
-.f4c2 {
-    padding: 50px;
-}
-
-
-
-
-button {
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    background-color: black;
-    border: none;
-    color: white;
+.curvedArriba {
     position: relative;
-    width: 500px;
-    height: 50px;
-    transition: background-color 0.2s ease-in, all 0.15s ease-in;
-}
-
-.button1::after {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: "Sedgwick Ave Display", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-
-    content: url(../../img/icoGmail.ico) " Enviar un mensaje";
-    width: 500px;
-    height: 50px;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    transform: translate(5px, 5px);
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-    transition: all 0.15s ease-in;
-}
-
-.button2::after {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: "Sedgwick Ave Display", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-
-    content: url(../../img/icolinkedin.png) " Enviar un mensaje";
-    width: 500px;
-    height: 50px;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    transform: translate(5px, 5px);
-    background-color: white;
-    border: 2px solid black;
-    color: black;
-    transition: all 0.15s ease-in;
-}
-
-button:hover::after {
-    transform: translate(0px, 0px);
-}
-
-button:hover {
-    transform: translate(0px, 0px);
-}
-
-button:active::after {
-    background-color: rgb(190, 218, 255);
-}
-
-.f3-1 a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.f3 a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.margin {
-    margin: 90px;
-}
-
-.f2c1,
-.f2c2 {
+    background: #049F99;
+    height: 100vh;
     width: 100%;
 }
 
-.tabla {
-    border: solid 2px black;
+.curvedArriba::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    box-sizing: border-box; /* Asegura que el padding y el border no aumenten el tamaño del elemento */
+    background: #fff;
+    height: 12%;
 }
 
-@media screen and (max-width: 768px) {
-    .f2c1 {
-        padding: 0;
+.curvedAbajo {
+    position: relative;
+    /* Posición relativa para que ::before funcione correctamente */
+    background: #049F99;
+    height: 30vh;
+    /* Ocupa toda la altura de la ventana */
+    width: 100%;
+    /* Ocupa todo el ancho */
+    margin-top: auto;
+    /* Empuja la sección hacia la parte inferior */
+}
+
+.curvedAbajo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    /* Posiciona la curva en la parte superior */
+    width: 100%;
+    height: 12%;
+    /* Altura de la curva */
+    background: #fff;
+    border-bottom-left-radius: 10% 100%;
+    border-bottom-right-radius: 10% 100%;
+}
+
+svg {
+    width: 90%;
+    height: 90%;
+    font-family: raleway;
+    position: absolute;
+    bottom: 100px;
+}
+
+svg text {
+    text-transform: uppercase;
+    font-size: 5rem;
+    animation: stroke 5s infinite alternate;
+}
+
+@keyframes stroke {
+    0% {
+        stroke: white;
+        stroke-width: 0;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+    }
+
+    70% {
+        stroke: white;
+    }
+
+    80% {
+        stroke: white;
+        stroke-width: 0.5;
+    }
+
+    100% {
+        stroke: white;
+        stroke-width: 0;
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+    }
+}
+
+.enca p {
+    width: 45%;
+    color: white;
+    position: absolute;
+    bottom: 470px;
+    left: 230px;
+    font-weight: bold;
+}
+
+.enca img {
+    height: 60vh;
+    position: absolute;
+    bottom: 300px;
+    left: 1000px;
+    transform: scaleX(-1);
+}
+
+.content {
+    text-align: center;
+    align-items: center;
+}
+
+.content p {
+    color: black;
+}
+
+.content h1 {
+    color: #049F99;
+    font-family: 'Montserrat-Regular';
+
+    font-size: 48px;
+}
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-container .portadaCard {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons span img {
+    height: 30px;
+}
+
+.icons span {
+    font-size: 1.5rem;
+    color: #049F99;
+    cursor: pointer;
+}
+
+.icons span:hover {
+    color: #026b66;
+}
+
+.piecero h5 {
+    color: white;
+    position: absolute;
+    top: 1600px;
+    left: 200px;
+}
+
+.piecero .git {
+    height: 50px;
+    position: absolute;
+    top: 1585px;
+    left: 1300px;
+}
+
+.piecero .linkedin {
+    height: 70px;
+    position: absolute;
+    top: 1575px;
+    left: 1380px;
+}
+
+
+
+/* Móviles (hasta 480px) */
+@media (max-width: 480px) {
+
+    .card-container {
+        padding: 5px;
+    }
+
+    .enca {
+        position: relative;
+        height: 100vh;
+    }
+
+    .enca img {
+        height: 50%;
+        position: absolute;
+        top: 25%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+
+    svg {
+        position: absolute;
+        top: 55%;
+        /* Centrado vertical */
+        left: 65%;
+        /* Centrado horizontal */
+        transform: translate(-50%, -50%);
+        /* Ajusta el punto de referencia al centro */
+        width: 90%;
+        /* Ajusta el tamaño del SVG */
+        height: 90%;
+        /* Ajusta la altura del SVG */
+        font-family: raleway;
+    }
+
+    svg text {
+        text-transform: uppercase;
+        font-size: 9rem;
+        animation: stroke 5s infinite alternate;
+        align-content: center;
+    }
+
+    .enca p {
+        width: 90%;
         text-align: center;
+        position: absolute;
+        top: 55%;
+        /* Centrado vertical */
+        left: 5%;
+        /* Centrado horizontal */
+        font-size: 14px;
     }
 
-    .f2c2 {
-        margin-top: 20px;
-        float: none;
+    .curvedArriba::after {
+        border-top-left-radius: 150% 100%;
+        border-top-right-radius: 150% 100%;
     }
 
-    .perfil2 {
-        float: none;
-        margin-bottom: 20px;
-    }
-
-    .f4c1,
-    .f4c2 {
-        padding: 20px;
-    }
-
-    button {
+    .piecero h5 {
         width: 100%;
-        max-width: 300px;
+        color: white;
+        position: absolute;
+        top: 170%;
+        left: 15%;
     }
-
-    .button1::after,
-    .button2::after {
-        width: 100%;
-        max-width: 300px;
+    
+    .piecero .git {
+        height: 50px;
+        position: absolute;
+        top: 178%;
+        left: 35%;
+    }
+    
+    .piecero .linkedin {
+        height: 70px;
+        position: absolute;
+        top: 176.5%;
+        left: 50%;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .f2 {
-        display: flex;
-        flex-direction: column;
+/* Tabletas (hasta 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
+    .enca {
+        position: relative;
+        height: 100vh;
     }
 
-    .f2c1 {
-        order: 2;
+    .enca img {
+        height: 50%;
+        position: absolute;
+        top: 25%;
+        left: 55%;
+        transform: translate(-50%, -50%);
     }
 
-    .f2c2 {
-        order: 1;
+    svg {
+        position: absolute;
+        top: 55%;
+        /* Centrado vertical */
+        left: 65%;
+        /* Centrado horizontal */
+        transform: translate(-50%, -50%);
+        /* Ajusta el punto de referencia al centro */
+        width: 90%;
+        /* Ajusta el tamaño del SVG */
+        height: 90%;
+        /* Ajusta la altura del SVG */
+        font-family: raleway;
     }
 
-    .f4 {
-        display: flex;
-        flex-direction: column;
+    svg text {
+        text-transform: uppercase;
+        font-size: 9rem;
+        animation: stroke 5s infinite alternate;
+        align-content: center;
     }
 
-    .f4c2 {
-        order: 2;
+    .enca p {
+        width: 90%;
+        text-align: center;
+        position: absolute;
+        top: 55%;
+        /* Centrado vertical */
+        left: 5%;
+        /* Centrado horizontal */
+        font-size: 22px;
     }
 
-    .f4c1 {
-        order: 1;
+    .curvedArriba::after {
+        border-top-left-radius: 150% 100%;
+        border-top-right-radius: 150% 100%;
+    }
+
+    .piecero h5 {
+        width: 100%;
+        color: white;
+        position: absolute;
+        top: 163%;
+        left: 32%;
+    }
+    
+    .piecero .git {
+        height: 50px;
+        position: absolute;
+        top: 170%;
+        left: 38%;
+    }
+    
+    .piecero .linkedin {
+        height: 70px;
+        position: absolute;
+        top: 169%;
+        left: 52%;
     }
 }
 
+/* Escritorios pequeños (hasta 1024px) */
+@media (max-width: 1024px) and (min-width: 769px){
+    .enca {
+        position: relative;
+        height: 100vh;
+    }
 
+    .enca img {
+        height: 50%;
+        position: absolute;
+        top: 25%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
 
-@media screen and (min-width: 769px) {
-    .f2 {
-        flex-direction: row;
+    svg {
+        position: absolute;
+        top: 55%;
+        /* Centrado vertical */
+        left: 65%;
+        /* Centrado horizontal */
+        transform: translate(-50%, -50%);
+        /* Ajusta el punto de referencia al centro */
+        width: 90%;
+        /* Ajusta el tamaño del SVG */
+        height: 90%;
+        /* Ajusta la altura del SVG */
+        font-family: raleway;
+    }
+
+    svg text {
+        text-transform: uppercase;
+        font-size: 9rem;
+        animation: stroke 5s infinite alternate;
+        align-content: center;
+    }
+
+    .enca p {
+        width: 90%;
+        text-align: center;
+        position: absolute;
+        top: 55%;
+        /* Centrado vertical */
+        left: 5%;
+        /* Centrado horizontal */
+        font-size: 22px;
+    }
+
+    .curvedArriba::after {
+        border-top-left-radius: 150% 100%;
+        border-top-right-radius: 150% 100%;
+    }
+
+    .piecero h5 {
+        width: 100%;
+        color: white;
+        position: absolute;
+        top: 170%;
+        left: 36.5%;
+    }
+    
+    .piecero .git {
+        height: 50px;
+        position: absolute;
+        top: 177%;
+        left: 40%;
+    }
+    
+    .piecero .linkedin {
+        height: 70px;
+        position: absolute;
+        top: 176%;
+        left: 53%;
+    }
+}
+
+/* Pantallas grandes (hasta 1200px) */
+@media (max-width: 1440px) and (min-width: 1025px) {
+    .enca {
+        position: relative;
+        height: 100vh;
+    }
+
+    .enca img {
+        height: 50%;
+        position: absolute;
+        top: 25%;
+        left: 65%;
+        transform: scaleX(-1);
+    }
+
+    svg {
+        position: absolute;
+        top: 45%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 90%;
+        font-family: raleway;
+    }
+
+    svg text {
+        text-transform: uppercase;
+        font-size: 5rem;
+        animation: stroke 5s infinite alternate;
+        align-content: center;
+    }
+
+    .enca p {
+        width: 50%;
+        position: absolute;
+        top: 40%;
+        left: 9%;
+        font-size: 22px;
+    }
+
+    .curvedArriba::after {
+        border-top-left-radius: 150% 100%;
+        border-top-right-radius: 150% 100%;
+    }
+
+    .piecero h5 {
+        width: 100%;
+        color: white;
+        position: absolute;
+        top: 178%;
+        left: 15%;
+    }
+    
+    .piecero .git {
+        height: 50px;
+        position: absolute;
+        top: 177%;
+        left: 78%;
+    }
+    
+    .piecero .linkedin {
+        height: 70px;
+        position: absolute;
+        top: 176%;
+        left: 85%;
     }
 }

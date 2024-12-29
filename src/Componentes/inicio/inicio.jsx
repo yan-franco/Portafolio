@@ -1,82 +1,76 @@
 import React from "react";
-// import {Route} from "react-router-dom"
 import "./inicio.css";
-import perfil from "../../img/perfil.png"
-import perfil2 from "../../img/perfil2.png"
-import imgProyectos from "../../img/imgproyectos.jpg"
+import imgInicioPortfolio from "../../img/imgInicioPortfolio.webp";
+import iconoGithub from "../../img/github.png";
+import iconoWeb from "../../img/iconoWeb.png";
+
+import iconoGitHubAbajo from "../../img/github-142-svgrepo-com.png";
+import iconoLinkedin from "../../img/linkedin-svgrepo-com.png";
+
+import imgCartelManhwa from "../../img/CARTEL_DE_MANHWAS_2.webp"
+
 
 const inicio = () => {
     return (
 
         <div>
-            <table className="tabla">
-                <tr className="f1">
-                    <td colSpan="2">
+            <div className="enca">
+                <section class="curvedArriba"></section>
 
-                    </td>
-                </tr>
-                <tr className="f2">
-                    <td className="f2c1">
-                        <h1 className="tituloName">Yan Mieles</h1>
-                        <h5>Soy Yan, un desarrollador web genial y (a veces) ingenioso con una habilidad especial para crear magia dentro y fuera de la pantalla.</h5>
-                    </td>
-                    <td className="f2c2"><img src={perfil} alt="Yan F. Mieles" className="imgperfil" /></td>
-                </tr>
+                <img src={imgInicioPortfolio} alt="Software" />
+                {/* <spline-viewer url="https://prod.spline.design/I0c0cPxXn52ZU7aI/scene.splinecode"></spline-viewer> */}
 
-                <tr>
-                    
-                    <td colSpan="2" className="f3-1">
-                        <a href="/Proyectos">
+                <svg viewBox="0 0 1320 300">
+                    <text x="35%" y="20%" text-anchor="middle" fill="#038b86">
+                        BIENVENIDO!
+                    </text>
+                </svg>
+                <p>Mi nombre es <u><em>Yan Franco Mieles</em></u>, soy una persona que esta comenzando su carrera como <em>Desarrollador Back-end</em>. Creo que la capacidad de superación es una de las cualidades más importantes para cualquier trabajador. Es por eso me considero capaz de mejorar y aprender a diario, de cada una de las oportunidades laborales que se me presenten. Busco un empleo que confié en mi capacidad y me dé las posibilidades de crecer profesionalmente.</p>
+            </div>
 
-                        <div className="margin">
-                            <img src={imgProyectos} alt="yan mieles" className="perfil2" />
-                            <h4 className="sub2">2020 - AHORA</h4>
-                            <h2 className="sub1">Proyectos</h2>
+            <div className="content">
+                <h1>Mi trabajo</h1>
+                <p>Una colección de proyectos en los que he trabajado.</p>
 
-                            <h5 className="parra">Construyendo un futuro digital donde la creatividad se encuentra <br /> con la innovación, cada proyecto es una historia única tejida con <br /> pasión y dedicación, impulsando el cambio y dejando una huella <br /> duradera en el mundo virtual.</h5>
+                <div class="card-container">
+                    <div class="card">
+                        <img src={imgCartelManhwa} alt="Cartel Manhwa" className="portadaCard" />
+                        <h3>Cartel Manhwa</h3>
+                        <p>
+                            Página web de lectura de manhwas con React, Node.js y PostgreSQL, que incluye tendencias, notificaciones interactivas y un diseño responsivo.
+                        </p>
+                        <div class="icons">
+                            <a href="/"><span><img src={iconoWeb} alt="Web" /></span></a>
+                            <a href="/"><span><img src={iconoGithub} alt="GitHub" /></span></a>
                         </div>
-                        </a>
-                    </td>
+                    </div>
+                    {/* <div class="card">
+                        <img src="" alt="Card Image" />
+                            <h3>Bahía.js</h3>
+                            <p>
+                                Una biblioteca liviana y fácil de usar para componentes web. No necesita un paso de compilación.
+                            </p>
+                            <div class="icons">
+                                <a href="/"><span><img src={iconoWeb} alt="Web" /></span></a>
+                            <a href="/"><span><img src={iconoGithub} alt="GitHub" /></span></a>
+                            </div>
+                    </div> */}
 
-                </tr>
+                </div>
+            </div>
 
-                <tr>
-                    
-                    <td colSpan="2" className="f3">
-                        <a href="/SobreMi">
 
-                        <div className="margin">
-                            <img src={perfil2} alt="yan mieles" className="perfil2" />
-                            <h4 className="sub2">200X - AHORA</h4>
-                            <h2 className="sub1">Sobre Mi</h2>
 
-                            <h5 className="parra">Conóceme a través de las cosas que viven <br /> en mi cabeza sin pagar alquiler.</h5>
-                        </div>
-                        </a>
-                    </td>
+            <section class="curvedAbajo"></section>
 
-                </tr>
+            <div className="piecero">
+                <h5>© 2024 yan-franco.vercel.app</h5>
 
-                
+                <a href="https://github.com/yan-franco"><span><img src={iconoGitHubAbajo} alt="GitHub" className="git" /></span></a>
+                <a href="https://www.linkedin.com/in/yan-franco-mieles-genez/"><span><img src={iconoLinkedin} alt="Linkedin" className="linkedin" /></span></a>
+            </div>
 
-                <tr className="f4">
-                    <td className="f4c1">
-                        <h1 className="titulofinal">¡TE VEO LUEGO!</h1>
-                        <h5>¡Te agradezco que hayas pasado por aquí! No seas un extraño, mantengámonos en contacto. <br />
-                            P.D. <br />
-                            ¡También estoy abierto a trabajos independientes!</h5>
-                    </td>
-                    <td className="f4c2">
-                        <a href="mailto:jhonmieles.321@gmail.com"><button className="button1"></button></a>
 
-                        <br />
-                        <br />
-                        <br />
-
-                        <a href="https://www.linkedin.com/in/yan-franco-mieles-genez/"><button className="button2"></button></a>
-                    </td>
-                </tr>
-            </table>
         </div>
 
     )
