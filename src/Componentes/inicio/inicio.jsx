@@ -11,6 +11,7 @@ import imgCartelManhwa from "../../img/CARTEL_DE_MANHWAS_2.webp"
 
 
 const inicio = () => {
+    const words = ["Mi ", "nombre ", "es ", "Yan ", "Franco ", "Mieles", ", ", "soy ", "una ", "persona ", "que ", "esta ", "comenzando ", "su ", "carrera ", "como ", "Desarrollador ", "Back-end", ". ", "Creo ", "que ", "la ", "capacidad ", "de ", "superación ", "es ", "una ", "de ", "las ", "cualidades ", "más ", "importantes ", "para ", "cualquier ", "trabajador", ". ", "Es ", "por ", "eso ", "que ", "me ", "considero ", "capaz ", "de ", "mejorar ", "y ", "aprender ", "a ", "diario", ", ", "de ", "cada ", "una ", "de ", "las ", "oportunidades ", "laborales ", "que ", "se ", "me ", "presenten", ". ", "Busco ", "un ", "empleo ", "que ", "confié ", "en ", "mi ", "capacidad ", "y ", "me ", "dé ", "las  ", "posibilidades ", "de ", "crecer ", "profesionalmente."];
     return (
 
         <div>
@@ -18,14 +19,25 @@ const inicio = () => {
                 <section class="curvedArriba"></section>
 
                 <img src={imgInicioPortfolio} alt="Software" />
-                {/* <spline-viewer url="https://prod.spline.design/I0c0cPxXn52ZU7aI/scene.splinecode"></spline-viewer> */}
 
                 <svg viewBox="0 0 1320 300">
                     <text x="35%" y="20%" text-anchor="middle" fill="#038b86">
                         BIENVENIDO!
                     </text>
                 </svg>
-                <p>Mi nombre es <u><em>Yan Franco Mieles</em></u>, soy una persona que esta comenzando su carrera como <em>Desarrollador Back-end</em>. Creo que la capacidad de superación es una de las cualidades más importantes para cualquier trabajador. Es por eso me considero capaz de mejorar y aprender a diario, de cada una de las oportunidades laborales que se me presenten. Busco un empleo que confié en mi capacidad y me dé las posibilidades de crecer profesionalmente.</p>
+                <p className="animated-paragraph">
+                    {words.map((word, index) => (
+                        <span
+                            key={index}
+                            className="word"
+                            style={{ animationDelay: `${index * 0.1}s` }}
+                        >
+                            {word}
+                        </span>
+                    ))}
+
+                    
+                </p>
             </div>
 
             <div className="content">
@@ -71,7 +83,7 @@ const inicio = () => {
             </div>
 
 
-        </div>
+        </div >
 
     )
 }

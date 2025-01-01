@@ -1,6 +1,6 @@
 .curvedArriba {
     position: relative;
-    background: #049F99;
+    background: #039F98;
     height: 100vh;
     width: 100%;
 }
@@ -19,7 +19,7 @@
 .curvedAbajo {
     position: relative;
     /* Posición relativa para que ::before funcione correctamente */
-    background: #049F99;
+    background: #039F98;
     height: 30vh;
     /* Ocupa toda la altura de la ventana */
     width: 100%;
@@ -84,9 +84,25 @@ svg text {
     width: 45%;
     color: white;
     position: absolute;
-    bottom: 470px;
+    bottom: 390px;
     left: 230px;
     font-weight: bold;
+
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .enca img {
@@ -107,7 +123,7 @@ svg text {
 }
 
 .content h1 {
-    color: #049F99;
+    color: #039F98;
     font-family: 'Montserrat-Regular';
 
     font-size: 48px;
@@ -177,12 +193,12 @@ svg text {
 
 .icons span {
     font-size: 1.5rem;
-    color: #049F99;
+    color: #039F98;
     cursor: pointer;
 }
 
 .icons span:hover {
-    color: #026b66;
+    color: gray;
 }
 
 .piecero h5 {
@@ -258,7 +274,7 @@ svg text {
         /* Centrado vertical */
         left: 5%;
         /* Centrado horizontal */
-        font-size: 14px;
+        font-size: 11px;
     }
 
     .curvedArriba::after {
@@ -270,21 +286,21 @@ svg text {
         width: 100%;
         color: white;
         position: absolute;
-        top: 170%;
+        top: 175%;
         left: 15%;
     }
-    
+
     .piecero .git {
         height: 50px;
         position: absolute;
-        top: 178%;
+        top: 180%;
         left: 35%;
     }
-    
+
     .piecero .linkedin {
         height: 70px;
         position: absolute;
-        top: 176.5%;
+        top: 179%;
         left: 50%;
     }
 }
@@ -349,14 +365,14 @@ svg text {
         top: 163%;
         left: 32%;
     }
-    
+
     .piecero .git {
         height: 50px;
         position: absolute;
         top: 170%;
         left: 38%;
     }
-    
+
     .piecero .linkedin {
         height: 70px;
         position: absolute;
@@ -366,7 +382,7 @@ svg text {
 }
 
 /* Escritorios pequeños (hasta 1024px) */
-@media (max-width: 1024px) and (min-width: 769px){
+@media (max-width: 1024px) and (min-width: 769px) {
     .enca {
         position: relative;
         height: 100vh;
@@ -425,14 +441,14 @@ svg text {
         top: 170%;
         left: 36.5%;
     }
-    
+
     .piecero .git {
         height: 50px;
         position: absolute;
         top: 177%;
         left: 40%;
     }
-    
+
     .piecero .linkedin {
         height: 70px;
         position: absolute;
@@ -493,18 +509,70 @@ svg text {
         top: 178%;
         left: 15%;
     }
-    
+
     .piecero .git {
         height: 50px;
         position: absolute;
         top: 177%;
         left: 78%;
     }
-    
+
     .piecero .linkedin {
         height: 70px;
         position: absolute;
         top: 176%;
         left: 85%;
+    }
+}
+
+/* Contenedor del párrafo */
+.paragraph-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que las palabras pasen a la siguiente línea */
+    justify-content: flex-start;
+    /* Alinea las palabras al inicio */
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    width: 100%;
+    /* Ajusta el contenedor al ancho disponible */
+    max-width: 600px;
+    /* Opcional: Limita el ancho máximo */
+}
+
+/* Estilo de cada palabra */
+.word {
+    display: inline-block;
+    opacity: 0;
+    /* Invisible al inicio */
+    transform: translateX(-20px);
+    /* Posicionada un poco hacia la izquierda */
+    margin: 0 0.5rem 0.5rem 0;
+    /* Espaciado entre palabras */
+    animation: bounceIn 0.4s ease-out forwards;
+    /* Animación más rápida */
+    animation-fill-mode: forwards;
+    /* Asegura que permanezca visible */
+}
+
+/* Animación */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(10px);
+        /* Rebote hacia la derecha */
+    }
+
+    100% {
+        opacity: 1;
+        /* Permanece visible */
+        transform: translateX(0);
+        /* Regresa a su posición original */
     }
 }
