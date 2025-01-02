@@ -578,18 +578,16 @@ svg text {
 }
 
 .tag-list {
-    width: 30rem;
-    font-family: "Montserrat";
+    width: 100%; /* Ajustar al ancho de la pantalla */
     position: relative;
-    overflow: hidden;
+    overflow: hidden; /* Evitar scroll horizontal */
+    background-color: white; /* Mantener el fondo blanco */
 }
 
 .inner {
-    width: fit-content;
     display: flex;
     gap: 1rem;
-    animation: loop 5s linear infinite;
-
+    animation: loop 10s linear infinite; /* Ajustar duración si es necesario */
 }
 
 .tag {
@@ -614,17 +612,28 @@ svg text {
 
 .fade {
     position: absolute;
-    background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b, );
-    inset: 0;
-    pointer-events: none;
+    top: 0;
+    bottom: 0;
+    width: 50px; /* Ajustar ancho del degradado */
+    pointer-events: none; /* Evitar que interfiera con la interacción */
+    z-index: 1;
+}
+
+.fade-left {
+    left: 0;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+}
+
+.fade-right {
+    right: 0;
+    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
 }
 
 @keyframes loop {
     0% {
         transform: translateX(0);
     }
-
     100% {
-        transform: translateX(-40%);
+        transform: translateX(-100%); /* Mover todos los elementos fuera del contenedor */
     }
 }
