@@ -38,9 +38,47 @@ const inicio = () => {
 
                     
                 </p>
-            </div>
+            </div> <br /><br />
 
             <div className="content">
+                <div className="tag_list">
+                    <div className="inner">
+                        <div className="tag"><span>#</span>HTML</div>
+                        <div className="tag"><span>#</span>CSS</div>
+                        <div className="tag"><span>#</span>JavaScript</div>
+                        <div className="tag"><span>#</span>React</div>
+                        <div className="tag"><span>#</span>Redux</div>
+                        <div className="tag"><span>#</span>Node</div>
+                        <div className="tag"><span>#</span>Express</div>
+                        <div className="tag"><span>#</span>PostgreSQL</div>
+                        <div className="tag"><span>#</span>HTML</div>
+                        <div className="tag"><span>#</span>CSS</div>
+                        <div className="tag"><span>#</span>JavaScript</div>
+                        <div className="tag"><span>#</span>React</div>
+                        <div className="tag"><span>#</span>Redux</div>
+                        <div className="tag"><span>#</span>Node</div>
+                        <div className="tag"><span>#</span>Express</div>
+                        <div className="tag"><span>#</span>PostgreSQL</div>
+                        <div className="tag"><span>#</span>HTML</div>
+                        <div className="tag"><span>#</span>CSS</div>
+                        <div className="tag"><span>#</span>JavaScript</div>
+                        <div className="tag"><span>#</span>React</div>
+                        <div className="tag"><span>#</span>Redux</div>
+                        <div className="tag"><span>#</span>Node</div>
+                        <div className="tag"><span>#</span>Express</div>
+                        <div className="tag"><span>#</span>PostgreSQL</div>
+                        <div className="tag"><span>#</span>HTML</div>
+                        <div className="tag"><span>#</span>CSS</div>
+                        <div className="tag"><span>#</span>JavaScript</div>
+                        <div className="tag"><span>#</span>React</div>
+                        <div className="tag"><span>#</span>Redux</div>
+                        <div className="tag"><span>#</span>Node</div>
+                        <div className="tag"><span>#</span>Express</div>
+                        <div className="tag"><span>#</span>PostgreSQL</div>
+                    </div>
+                    <div className="fade"></div>
+                </div>
+                <br />
                 <h1>Mi trabajo</h1>
                 <p>Una colección de proyectos en los que he trabajado.</p>
 

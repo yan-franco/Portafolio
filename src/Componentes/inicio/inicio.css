@@ -204,21 +204,21 @@ svg text {
 .piecero h5 {
     color: white;
     position: absolute;
-    top: 1600px;
+    top: 1740px;
     left: 200px;
 }
 
 .piecero .git {
     height: 50px;
     position: absolute;
-    top: 1585px;
+    top: 1735px;
     left: 1300px;
 }
 
 .piecero .linkedin {
     height: 70px;
     position: absolute;
-    top: 1575px;
+    top: 1725px;
     left: 1380px;
 }
 
@@ -286,21 +286,21 @@ svg text {
         width: 100%;
         color: white;
         position: absolute;
-        top: 185%;
+        top: 199%;
         left: 15%;
     }
 
     .piecero .git {
         height: 50px;
         position: absolute;
-        top: 190%;
+        top: 205%;
         left: 35%;
     }
 
     .piecero .linkedin {
         height: 70px;
         position: absolute;
-        top: 189%;
+        top: 204%;
         left: 50%;
     }
 }
@@ -362,21 +362,21 @@ svg text {
         width: 100%;
         color: white;
         position: absolute;
-        top: 163%;
+        top: 178%;
         left: 32%;
     }
 
     .piecero .git {
         height: 50px;
         position: absolute;
-        top: 170%;
+        top: 185%;
         left: 38%;
     }
 
     .piecero .linkedin {
         height: 70px;
         position: absolute;
-        top: 169%;
+        top: 184%;
         left: 52%;
     }
 }
@@ -438,21 +438,21 @@ svg text {
         width: 100%;
         color: white;
         position: absolute;
-        top: 170%;
+        top: 190%;
         left: 36.5%;
     }
 
     .piecero .git {
         height: 50px;
         position: absolute;
-        top: 177%;
+        top: 197%;
         left: 40%;
     }
 
     .piecero .linkedin {
         height: 70px;
         position: absolute;
-        top: 176%;
+        top: 196%;
         left: 53%;
     }
 }
@@ -506,21 +506,21 @@ svg text {
         width: 100%;
         color: white;
         position: absolute;
-        top: 178%;
+        top: 194%;
         left: 15%;
     }
 
     .piecero .git {
         height: 50px;
         position: absolute;
-        top: 177%;
+        top: 193%;
         left: 78%;
     }
 
     .piecero .linkedin {
         height: 70px;
         position: absolute;
-        top: 176%;
+        top: 192%;
         left: 85%;
     }
 }
@@ -574,5 +574,57 @@ svg text {
         /* Permanece visible */
         transform: translateX(0);
         /* Regresa a su posición original */
+    }
+}
+
+.tag-list {
+    width: 30rem;
+    font-family: "Montserrat";
+    position: relative;
+    overflow: hidden;
+}
+
+.inner {
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    animation: loop 5s linear infinite;
+
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    color: #e2e8f0;
+    font-size: 0.9rem;
+    background-color: #007c76;
+    padding: 0.7rem 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 
+        0 0.1rem 0.2rem #00000033,
+        0 0.1rem 0.5rem #0000004d,
+        0 0.2rem 1.5rem #00000066;
+}
+
+.tag span {
+    font-size: 1.2rem;
+    color: #4794ff;
+}
+
+.fade {
+    position: absolute;
+    background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b, );
+    inset: 0;
+    pointer-events: none;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-40%);
     }
 }
