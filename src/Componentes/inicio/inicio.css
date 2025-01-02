@@ -286,21 +286,21 @@ svg text {
         width: 100%;
         color: white;
         position: absolute;
-        top: 175%;
+        top: 185%;
         left: 15%;
     }
 
     .piecero .git {
         height: 50px;
         position: absolute;
-        top: 180%;
+        top: 190%;
         left: 35%;
     }
 
     .piecero .linkedin {
         height: 70px;
         position: absolute;
-        top: 179%;
+        top: 189%;
         left: 50%;
     }
 }
