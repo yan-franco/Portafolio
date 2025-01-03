@@ -109,7 +109,7 @@ svg text {
     height: 60vh;
     position: absolute;
     bottom: 300px;
-    left: 1000px;
+    left: 1100px;
     transform: scaleX(-1);
 }
 
@@ -240,7 +240,7 @@ svg text {
         height: 50%;
         position: absolute;
         top: 25%;
-        left: 55%;
+        left: 45%;
         transform: translate(-50%, -50%);
     }
 
@@ -316,7 +316,7 @@ svg text {
         height: 50%;
         position: absolute;
         top: 25%;
-        left: 55%;
+        left: 50%;
         transform: translate(-50%, -50%);
     }
 
@@ -391,8 +391,8 @@ svg text {
     .enca img {
         height: 50%;
         position: absolute;
-        top: 25%;
-        left: 55%;
+        top: 23%;
+        left: 50%;
         transform: translate(-50%, -50%);
     }
 
@@ -468,7 +468,7 @@ svg text {
         height: 50%;
         position: absolute;
         top: 25%;
-        left: 65%;
+        left: 67%;
         transform: scaleX(-1);
     }
 
