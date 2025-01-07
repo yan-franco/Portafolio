@@ -41,7 +41,7 @@ const inicio = () => {
             </div> <br /><br />
 
             <div className="content">
-                {/* <div className="tag-list">
+                <div className="tag-list">
                     <div class="fade fade-left"></div>
                     <div className="inner">
                         <div className="tag"><span>#</span>HTML</div>
@@ -78,7 +78,7 @@ const inicio = () => {
                         <div className="tag"><span>#</span>PostgreSQL</div>
                     </div>
                     <div class="fade fade-right"></div>
-                </div> */}
+                </div>
 
                 <br />
                 <h1>Mi trabajo</h1>
