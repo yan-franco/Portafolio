@@ -1,3 +1,16 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Previene desbordamiento horizontal */
+    font-family: Arial, sans-serif;
+}
+
+/* Secciones curvas */
 .curvedArriba {
     position: relative;
     background: #039F98;
@@ -18,27 +31,21 @@
 
 .curvedAbajo {
     position: relative;
-    /* Posición relativa para que ::before funcione correctamente */
     background: #039F98;
     height: 30vh;
-    /* Ocupa toda la altura de la ventana */
     width: 100%;
-    /* Ocupa todo el ancho */
     margin-top: auto;
-    /* Empuja la sección hacia la parte inferior */
 }
 
 .curvedAbajo::before {
     content: '';
     position: absolute;
     top: 0;
-    /* Posiciona la curva en la parte superior */
     width: 100%;
-    height: 12%;
-    /* Altura de la curva */
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
     background: #fff;
-    border-bottom-left-radius: 10% 100%;
-    border-bottom-right-radius: 10% 100%;
+    height: 12%;
 }
 
 svg {
