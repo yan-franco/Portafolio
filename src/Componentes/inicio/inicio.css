@@ -10,9 +10,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-p, h5 {
-    display: inline-block; /* Hace que el contenedor se ajuste al contenido */
-}
 
 /* Secciones curvas */
 .curvedArriba {
