@@ -10,6 +10,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+p, h5 {
+    display: inline-block; /* Hace que el contenedor se ajuste al contenido */
+}
+
 /* Secciones curvas */
 .curvedArriba {
     position: relative;
@@ -291,21 +295,21 @@ svg text {
         width: 100vh;
         color: white;
         position: absolute;
-        top: 199%;
+        top: 195%;
         left: 15%;
     }
 
     .piecero .git {
         height: 50px;
         position: absolute;
-        top: 205%;
+        top: 200%;
         left: 35%;
     }
 
     .piecero .linkedin {
         height: 70px;
         position: absolute;
-        top: 204%;
+        top: 199%;
         left: 50%;
     }
 }
