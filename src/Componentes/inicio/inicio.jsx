@@ -92,8 +92,8 @@ const inicio = () => {
                             Página web de lectura de manhwas con React, Node.js y PostgreSQL, que incluye tendencias, notificaciones interactivas y un diseño responsivo.
                         </p>
                         <div class="icons">
-                            <a href="/"><span><img src={iconoWeb} alt="Web" /></span></a>
-                            <a href="/"><span><img src={iconoGithub} alt="GitHub" /></span></a>
+                            <a href="https://carteldemanhwas.net/"><span><img src={iconoWeb} alt="Web" /></span></a>
+                            {/* <a href="/"><span><img src={iconoGithub} alt="GitHub" /></span></a> */}
                         </div>
                     </div>
                     {/* <div class="card">
