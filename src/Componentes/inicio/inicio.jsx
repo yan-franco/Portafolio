@@ -7,7 +7,9 @@ import iconoWeb from "../../img/iconoWeb.png";
 import iconoGitHubAbajo from "../../img/github-142-svgrepo-com.png";
 import iconoLinkedin from "../../img/linkedin-svgrepo-com.png";
 
-import imgCartelManhwa from "../../img/CARTEL_DE_MANHWAS_2.webp"
+import imgCartelManhwa from "../../img/CARTEL_DE_MANHWAS_2.webp";
+import imgYConverplus from "../../img/imgProyectCoverplus.png";
+import imgGeoProduct from "../../img/geoproducto.gif";
 
 
 const inicio = () => {
@@ -96,17 +98,28 @@ const inicio = () => {
                             {/* <a href="/"><span><img src={iconoGithub} alt="GitHub" /></span></a> */}
                         </div>
                     </div>
-                    {/* <div class="card">
-                        <img src="" alt="Card Image" />
-                            <h3>Bahía.js</h3>
+                    <div class="card">
+                        <img src={imgYConverplus} alt="Y ComvertiPlus" />
+                            <h3>CombertiPlus</h3>
                             <p>
-                                Una biblioteca liviana y fácil de usar para componentes web. No necesita un paso de compilación.
+                                Página web de Conversion de de Unidades con React.
                             </p>
                             <div class="icons">
-                                <a href="/"><span><img src={iconoWeb} alt="Web" /></span></a>
-                            <a href="/"><span><img src={iconoGithub} alt="GitHub" /></span></a>
+                                <a href="/https://y-converti-plus.vercel.app/"><span><img src={iconoWeb} alt="Web" /></span></a>
+                            <a href="https://github.com/yan-franco/YConvertiPlus"><span><img src={iconoGithub} alt="GitHub" /></span></a>
                             </div>
-                    </div> */}
+                    </div>
+                    <div class="card">
+                        <img src={imgGeoProduct} alt="GeoProducto" />
+                            <h3>Bahía.js</h3>
+                            <p>
+                                Página web de Localización de productos Escasos en el google map.
+                            </p>
+                            <div class="icons">
+                                <a href="https://geoproducto.vercel.app/"><span><img src={iconoWeb} alt="Web" /></span></a>
+                            <a href="https://github.com/yan-franco/webHappyBirthday"><span><img src={iconoGithub} alt="GitHub" /></span></a>
+                            </div>
+                    </div>
 
                 </div>
             </div>
