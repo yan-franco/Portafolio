@@ -99,7 +99,7 @@ const inicio = () => {
                         </div>
                     </div>
                     <div class="card">
-                        <img src={imgYConverplus} alt="Y ComvertiPlus" />
+                        <img src={imgYConverplus} alt="Y ComvertiPlus" className="portadaCard" />
                             <h3>CombertiPlus</h3>
                             <p>
                                 Página web de Conversion de de Unidades con React.
@@ -110,7 +110,7 @@ const inicio = () => {
                             </div>
                     </div>
                     <div class="card">
-                        <img src={imgGeoProduct} alt="GeoProducto" />
+                        <img src={imgGeoProduct} alt="GeoProducto" className="portadaCard" />
                             <h3>Bahía.js</h3>
                             <p>
                                 Página web de Localización de productos Escasos en el google map.
