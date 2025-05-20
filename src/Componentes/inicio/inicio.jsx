@@ -111,7 +111,7 @@ const inicio = () => {
                     </div>
                     <div class="card">
                         <img src={imgGeoProduct} alt="GeoProducto" className="portadaCard" />
-                            <h3>Bahía.js</h3>
+                            <h3>GeoProducto</h3>
                             <p>
                                 Página web de Localización de productos Escasos en el google map.
                             </p>
